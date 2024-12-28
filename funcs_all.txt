@@ -4,6 +4,7 @@
     "player_getInput",
     "game_mainLoop",
     "intermission",
+    "renderer_update",
     "SDL_Delay",
     "SDL_RenderPresent",
     "GLES2_RenderPresent",

@@ -2,6 +2,7 @@
     "main",
     "title_showCredits",
     "player_getInput",
+    "renderer_update",
     "SDL_Delay",
     "SDL_RenderPresent",
     "GLES2_RenderPresent",
