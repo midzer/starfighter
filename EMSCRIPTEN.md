@@ -4,7 +4,7 @@
 
 ```
 ./autogen.sh
-./configure SF_RUN_IN_PLACE=1 SF_NOFONT=1 SF_OLD_MUSIC=1 'CFLAGS=-O3 -flto -fno-rtti -fno-exceptions'
+emconfigure ./configure SF_RUN_IN_PLACE=1 SF_NOFONT=1 SF_OLD_MUSIC=1 'CFLAGS=-O3 -flto -fno-rtti -fno-exceptions'
 emmake make
 ```
 
