@@ -634,7 +634,7 @@ SDL_Surface *gfx_createSurface(int width, int height)
 		amask = 0xff000000;
 	#endif
 
-	surface = SDL_CreateRGBSurface(SDL_SWSURFACE, width, height, 32, rmask, gmask, bmask, amask);
+	surface = SDL_CreateRGBSurface(0, width, height, 32, rmask, gmask, bmask, amask);
 
 	if (surface == NULL) {
 		printf("CreateRGBSurface failed: %s\n", SDL_GetError());

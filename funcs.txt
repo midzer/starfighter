@@ -1,0 +1,10 @@
+[
+    "main",
+    "title_showCredits",
+    "player_getInput",
+    "SDL_Delay",
+    "SDL_RenderPresent",
+    "GLES2_RenderPresent",
+    "Emscripten_GLES_SwapWindow",
+    "dynCall_v"
+]

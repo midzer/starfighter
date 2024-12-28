@@ -32,31 +32,6 @@ esac
 
 AC_SEARCH_LIBS([atanf], [m])
 
-PKG_CHECK_EXISTS([SDL2_mixer], [
-	PKG_CHECK_EXISTS([SDL2_ttf], [
-		PKG_CHECK_MODULES([SDL], [sdl2 SDL2_image SDL2_mixer SDL2_ttf])
-	], [
-		PKG_CHECK_MODULES([SDL], [sdl2 SDL2_image SDL2_mixer])
-		STARFIGHTER_CPPFLAGS="$STARFIGHTER_CPPFLAGS -DNOFONT"
-		echo "WARNING: SDL_ttf not found; Unicode will not be supported."
-	])
-], [
-	PKG_CHECK_EXISTS([SDL2_ttf], [
-		PKG_CHECK_MODULES([SDL], [sdl2 SDL2_image SDL2_ttf])
-	], [
-		PKG_CHECK_MODULES([SDL], [sdl2 SDL2_image])
-		STARFIGHTER_CPPFLAGS="$STARFIGHTER_CPPFLAGS -DNOFONT"
-		echo "WARNING: SDL_ttf not found; Unicode will not be supported."
-	])
-	STARFIGHTER_CPPFLAGS="$STARFIGHTER_CPPFLAGS -DNOSOUND"
-	echo "WARNING: SDL_mixer not found; audio will not be supported."
-])
-PKG_CHECK_MODULES([PANGO], [pango], [
-], [
-	STARFIGHTER_CPPFLAGS="$STARFIGHTER_CPPFLAGS -DNOFONT"
-	echo "WARNING: Pango not found; Unicode will not be supported."
-])
-
 AC_ARG_VAR([SF_WARN], [Set to 1 to enable compiler warnings])
 AC_ARG_VAR([SF_UNHARDEN], [Set to 1 to disable hardening flags (for compatibility)])
 AC_ARG_VAR([SF_SCREEN_WIDTH], [The width of the game window in pixels])

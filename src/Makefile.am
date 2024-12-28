@@ -11,7 +11,7 @@ else
 starfighter_CPPFLAGS = $(STARFIGHTER_CPPFLAGS) -DDATADIR=\"$(pkgdatadir)\"
 endif
 
-starfighter_CFLAGS = $(SDL_CFLAGS) $(PANGO_CFLAGS)
+starfighter_CFLAGS = $(SDL_CFLAGS) $(PANGO_CFLAGS) -sUSE_SDL=2
 starfighter_LDADD = $(STARFIGHTER_LDADD) $(SDL_LIBS) $(PANGO_LIBS)
 
 starfighter_SOURCES = \

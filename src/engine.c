@@ -305,7 +305,7 @@ void engine_setMode()
 
 	window = SDL_CreateWindow("Project: Starfighter",
 		SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
-		screen->w, screen->h, SDL_WINDOW_RESIZABLE);
+		screen->w, screen->h, SDL_WINDOW_RESIZABLE | SDL_WINDOW_ALLOW_HIGHDPI);
 	if (window == NULL)
 	{
 		printf("Could not create window: %s\n", SDL_GetError());

@@ -3,6 +3,8 @@ dist
 *.o
 *.pak
 *.mo
+*.mod
+*.s3m
 starfighter
 src/starfighter
 

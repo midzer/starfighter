@@ -47,6 +47,7 @@ void renderer_reset()
 			exit(1);
 		}
 	}
+	SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "linear");
 	SDL_RenderSetLogicalSize(renderer, screen->w, screen->h);
 
 	if (renderer_texture != NULL)
