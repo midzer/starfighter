@@ -47,7 +47,6 @@ static Message messages[MAX_EVENTS];
 
 void cutscene_init(int scene)
 {
-	screen_clear(black);
 	renderer_update();
 	screen_clear(black);
 
@@ -615,6 +614,5 @@ void cutscene_init(int scene)
 
 	screen_flushBuffer();
 	gfx_free();
-	screen_clear(black);
 	renderer_update();
 }

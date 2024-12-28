@@ -462,7 +462,6 @@ void player_getInput()
 					game_setStars();
 					renderer_reset();
 					gfx_scaleBackground();
-					screen_clear(black);
 					renderer_update();
 					screen_clear(black);
 					screen_addBuffer(0, 0, screen->w, screen->h);

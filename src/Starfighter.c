@@ -151,7 +151,6 @@ int main(int argc, char **argv)
 		screen_renderString("Try harder...", -1, 315, FONT_WHITE);
 		renderer_update();
 		SDL_Delay(2000);
-		screen_clear(black);
 		renderer_update();
 		SDL_Delay(500);
 	}

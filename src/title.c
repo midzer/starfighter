@@ -233,7 +233,6 @@ int title_show()
 
 	gfx_loadSprites();
 
-	screen_clear(black);
 	renderer_update();
 	screen_clear(black);
 
@@ -652,7 +651,6 @@ void title_showCredits()
 	TextObject *credit;
 	int nCredit;
 
-	screen_clear(black);
 	renderer_update();
 	screen_clear(black);
 

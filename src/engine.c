@@ -362,7 +362,6 @@ void engine_setFullscreen(int value)
 	engine.fullScreen = value;
 
 	// Clear the screen (prevents artifacts)
-	screen_clear(black);
 	renderer_update();
 	screen_clear(black);
 	screen_addBuffer(0, 0, screen->w, screen->h);

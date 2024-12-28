@@ -2464,7 +2464,6 @@ static void game_showGameOver()
 
 	SDL_Surface *gameover = gfx_loadImage("gfx/gameover.png");
 
-	screen_clear(black);
 	renderer_update();
 	screen_clear(black);
 	SDL_Delay(1000);
@@ -2932,7 +2931,6 @@ int game_mainLoop()
 				&& (aliens[ALIEN_BOSS].flags & FL_ESCAPED))
 		{
 			audio_playSound(SFX_DEATH, aliens[ALIEN_BOSS].x, aliens[ALIEN_BOSS].y);
-			screen_clear(white);
 			renderer_update();
 			for (int i = 0 ; i < 300 ; i++)
 			{

@@ -2003,7 +2003,6 @@ int intermission()
 	// do not perform certain keyboard actions
 	engine.gameSection = SECTION_INTERMISSION;
 
-	screen_clear(black);
 	renderer_update();
 	screen_clear(black);
 

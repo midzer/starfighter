@@ -1169,7 +1169,6 @@ void mission_showStartScreen()
 {
 	char temp[STRMAX_SHORT];
 
-	screen_clear(black);
 	renderer_update();
 
 	gfx_loadSprites();
@@ -1254,7 +1253,6 @@ void mission_showStartScreen()
 				break;
 		}
 
-		screen_clear(black);
 		renderer_update();
 		screen_clear(black);
 	}
@@ -1275,7 +1273,6 @@ void mission_showFinishedScreen()
 
 	if (game.area != MISN_INTERCEPTION)
 	{
-		screen_clear(black);
 		renderer_update();
 
 		if (game.shots > 0)
